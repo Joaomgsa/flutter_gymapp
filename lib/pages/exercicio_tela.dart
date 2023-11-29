@@ -10,7 +10,7 @@ class ExercicioTela extends StatelessWidget {
     id: "001",
     name: "Remada Baixa Supinada",
     treino: "Treino A",
-    comoFazer: "Puxe a barra em direção ao peito, mantendo os cotovelos próximos ao corpo e contraindo os músculos das costas.",
+    comoFazer: "Puxe a barra em direção ao peito,",
   );
 
   final List<SentimentoModelo> listaSentimento = [
@@ -28,11 +28,20 @@ class ExercicioTela extends StatelessWidget {
         title: Column(
           children: [
             Text(exercicioModelo.name,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22,)),
-            Text(exercicioModelo.treino),
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22,)),
+            Text(exercicioModelo.treino,
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15,))
           ],
         ),
         centerTitle: true,
+        backgroundColor: const Color(0xFF0AD692),
+        elevation: 0,
+        toolbarHeight: 72,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(32),
+          ),
+        )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
