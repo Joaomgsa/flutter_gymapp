@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gymapp/pages/authentication_tela.dart';
 import 'package:flutter_gymapp/pages/exercicio_tela.dart';
 
 void main() {
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return const MaterialApp(
 
-      home: ExercicioTela(),
+      home: AuthenticationTela(),
     );
   }
 }
