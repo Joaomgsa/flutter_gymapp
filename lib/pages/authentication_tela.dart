@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gymapp/_core/my_colors.dart';
+import 'package:flutter_gymapp/components/decoration_auth_fields.dart';
 
 class AuthenticationTela extends StatefulWidget {
   const AuthenticationTela({super.key});
@@ -48,12 +49,15 @@ class _AuthenticationTelaState extends State<AuthenticationTela> {
                         color: Colors.white
                       ),),
                       const SizedBox(height: 32,),
-                      TextFormField(decoration: const InputDecoration(label: Text("E-mail")),),
-                      TextFormField(decoration: const InputDecoration(label: Text("Senha")),obscureText: true,),
+                      TextFormField(decoration: getAuthenticationInputDecoration("Email"),),
+                      const SizedBox(height: 8,),
+                      TextFormField(decoration: getAuthenticationInputDecoration("Senha"),obscureText: true,),
+                      const SizedBox(height: 8,),
                      Visibility(visible : !_isLogin, child: Column(
                         children: [
-                          TextFormField(decoration: const InputDecoration(label: Text("Confirmar Senha")),obscureText: true,),
-                          TextFormField(decoration: const InputDecoration(label: Text("Nome ")),),
+                          TextFormField(decoration: getAuthenticationInputDecoration("Confirme a Senha"),obscureText: true,),
+                          const SizedBox(height: 8,),
+                          TextFormField(decoration: getAuthenticationInputDecoration("Nome"),),
                         ],
                      )),
                       const SizedBox(height: 16,),
