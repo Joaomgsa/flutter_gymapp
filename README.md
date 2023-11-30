@@ -46,7 +46,7 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 ## Contato
 
-Seu Nome - joaomgsa@gmail.com
+Joaomgsa - joaomgsa@gmail.com
 
 Link do Projeto: [https://github.com/joaomgsa/flutter_gymapp](https://github.com/joaomgsa/flutter_gymapp)
 
